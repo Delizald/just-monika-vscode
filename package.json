@@ -1,0 +1,51 @@
+{
+	"name": "just-monika",
+	"displayName": "just-monika",
+	"description": "Just Monika",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"author": {
+		"name": "David Elizalde",
+		"email": "david.elizalde.r.a@gmail.com",
+    "url": "https://github.com/Delizald/just-monika-vscode"
+	},
+	"categories": [
+		"Other",
+		"Visualization"
+	],
+	"activationEvents": [
+		"onCommand:just-monika.justMonika"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "just-monika.justMonika",
+				"title": "Just Monika"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.20.13",
+		"@types/vscode": "^1.56.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}
