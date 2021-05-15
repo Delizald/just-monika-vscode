@@ -9,8 +9,13 @@
 	"author": {
 		"name": "David Elizalde",
 		"email": "david.elizalde.r.a@gmail.com",
-    "url": "https://github.com/Delizald/just-monika-vscode"
+		"url": "https://github.com/Delizald/just-monika-vscode"
 	},
+  "repository": {
+    "url": "https://github.com/Delizald/just-monika-vscode.git", 
+    "type": "git"
+  },
+  "publisher": "delizald",
 	"categories": [
 		"Other",
 		"Visualization"
@@ -47,5 +52,8 @@
 		"mocha": "^8.2.1",
 		"typescript": "^4.1.3",
 		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"vsce": "^1.88.0"
 	}
 }
